@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:padding = "15dp"
+        android:text="This is a simple program\nfor logging your phone positional data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <TextView
+        android:paddingLeft = "15dp"
+        android:layout_marginTop="30dp"
+        android:text="Sensors for reading:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+    <CheckBox
+        android:text="Magnitometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/radioButton1" />
+    <TextView
+        android:text=""
+        android:layout_marginBottom="5dp"
+        android:gravity = "center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mag_data" />
+    <CheckBox
+        android:text="Accelerometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/radioButton2"
+        android:clickable="false"
+        android:checked="true" />
+    <TextView
+        android:text=""
+        android:layout_marginBottom="5dp"
+        android:gravity = "center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/acc_data" />
+    <CheckBox
+        android:text="Gyroscope"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/radioButton3"
+        android:clickable="false"
+        android:checked="true" />
+    <TextView
+        android:text=""
+        android:gravity = "center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:id="@+id/gyr_data" />
+
+    <Button
+        android:padding="30dp"
+        android:text="Start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStart"
+        android:clickable="true" />
+    <Button
+        android:padding="30dp"
+        android:text="Finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFinish"
+        android:allowUndo="false"
+        android:clickable="false" />
+</LinearLayout>
